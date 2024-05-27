@@ -1,6 +1,7 @@
 # API-Grupo 7:
 Trabalhos e exercícios de API, turma 17, curso SerraTec 2024.
 Segundo repositório após problemas de merge;
+
 Repositório antigo: https://github.com/Haubrichp/API
 
 ## Integrantes:
