@@ -1,0 +1,9 @@
+2024-05-17 15:36:13.301528-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]NOME"; SQL statement:
+NOME [42000-224]
+2024-05-17 15:36:15.415507-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]NOME"; SQL statement:
+NOME [42000-224]
+2024-05-17 16:02:58.183127-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]* INTO LANCAMENTO_VENDAS"; expected "INTO"; SQL statement:
+INSERT * INTO LANCAMENTO_VENDAS [42001-224]
