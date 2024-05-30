@@ -34,26 +34,19 @@ public class Produto {
 	@Min(value = 0, message = "A quantidade não pode ser negativa")
     @Max(value = 1000, message = "A quantidade máxima permitida é 1000")
 	private Double quantidadeEstoque;
+	private Integer quantidade;
 	@PastOrPresent(message = "Data do pedido é uma data futura, atualizar para data atual.")
 	private LocalDate dataCadastro;
 	@NotNull(message= "Valor não pode ser nulo ou vazio.")
 	@Min(value = 0, message = "O valor não pode ser negativo" )
 	@Max(value = 10000, message = "O Valor máximo de um produto é de 10000")
 	private Double valor;
+	private Double total;
 
 	@JoinColumn(name = "id_categoria")
 	@ManyToOne
 	@JsonBackReference
 	private Categoria categoria;
-	
-
-	public Categoria getCategoria() {
-		return categoria;
-	}
-
-	public void setCategoria(Categoria categoria) {
-		this.categoria = categoria;
-	}
 
 	public Long getId() {
 		return id;
@@ -87,6 +80,14 @@ public class Produto {
 		this.quantidadeEstoque = quantidadeEstoque;
 	}
 
+	public Integer getQuantidade() {
+		return quantidade;
+	}
+
+	public void setQuantidade(Integer quantidade) {
+		this.quantidade = quantidade;
+	}
+
 	public LocalDate getDataCadastro() {
 		return dataCadastro;
 	}
@@ -101,5 +102,21 @@ public class Produto {
 
 	public void setValor(Double valor) {
 		this.valor = valor;
+	}
+
+	public Double getTotal() {
+		return total;
+	}
+
+	public void setTotal(Double total) {
+		this.total = total;
+	}
+
+	public Categoria getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(Categoria categoria) {
+		this.categoria = categoria;
 	}
 }
